@@ -1,6 +1,0 @@
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\obj\Debug\Exercicio if.csproj.CoreCompileInputs.cache
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\bin\Debug\Exercicio if.exe.config
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\bin\Debug\Exercicio if.exe
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\bin\Debug\Exercicio if.pdb
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\obj\Debug\Exercicio if.exe
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Exercicio if\obj\Debug\Exercicio if.pdb

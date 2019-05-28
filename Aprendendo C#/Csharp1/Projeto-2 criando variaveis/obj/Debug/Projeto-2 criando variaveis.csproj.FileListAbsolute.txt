@@ -1,7 +1,0 @@
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\bin\Debug\Projeto-2 criando variaveis.exe.config
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\bin\Debug\Projeto-2 criando variaveis.exe
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\bin\Debug\Projeto-2 criando variaveis.pdb
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\obj\Debug\Projeto-2 criando variaveis.csprojAssemblyReference.cache
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\obj\Debug\Projeto-2 criando variaveis.csproj.CoreCompileInputs.cache
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\obj\Debug\Projeto-2 criando variaveis.exe
-C:\Users\stag012\Documents\Aprendendo C#\Csharp1\Projeto-2 criando variaveis\obj\Debug\Projeto-2 criando variaveis.pdb
