@@ -19,6 +19,12 @@ main h1 {
     text-transform: uppercase;
 }
 
+main {
+    float: left;
+    width: 85%;
+    padding-bottom: 10px;
+}
+
 p {
     text-align: justify;
     margin: 20px 0;
@@ -28,9 +34,10 @@ blockquote {
     background-color:#D9E5E3;
     padding: 25px;
     border: 10px solid #C2CCCA;
-    size: 250px;
+    width: 250px;
     box-sizing: border-box;
     margin: 20px 40px;
+    font-style: italic;
 }
 
 aside{
@@ -42,6 +49,11 @@ aside{
 .Rodape-Principal{
     background-color: #000;
     color: #F2FFFC;
+    clear: both;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 .leia-mais {
@@ -126,4 +138,35 @@ article {
     padding-bottom: 30px;
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
+}
+
+.petobras{
+    float: left;
+}
+
+.fiat{
+    float: right;
+}
+
+.subtitulo-texto {
+    clear: both;
+}
+
+.foto, .navegacao {
+    float: right;
+    box-sizing: border-box;
+    border-left: 10px solid black;
+    border-bottom: 10px solid black;
+}
+
+.foto{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.navegacao {
+    width: 15%;
+    position: relative;
+    top: 310px;
 }
