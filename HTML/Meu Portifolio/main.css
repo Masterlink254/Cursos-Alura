@@ -3,40 +3,71 @@ body {
     color: white;
 }
 
-.animate-svg {
-    width: 800px;
-    margin: 200px auto;
-}
 
-.animate-svg svg {
-    stroke-width: 2px;
-    stroke: #003366;
-    width: 100%;
-    height: 100%;
-    stroke-dashoffset: 1000;
-    stroke-dasharray: 1300;
-    animation: svganimation 3s ease-in-out forwards infinite;
-}
+/* ==================================================*/
+/*                  Animação SVG                     */
 
-@keyframes svganimation {
-    0% {
-        stroke-dashoffset: 1400;
-    }
-    70% {
-        stroke-dashoffset: 0;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
-}
+        .animate-svg {
+            width: 800px;
+            margin: 200px auto;
+        }
+
+        .animate-svg svg {
+            stroke-width: 2px;
+            stroke: #000;
+            width: 100%;
+            height: 100%;
+            stroke-dashoffset: 0;
+            stroke-dasharray: 1300;
+            animation: svganimation 5s ease-in-out;
+            fill: none;
+            stroke-opacity: 0;
+        }
+
+        @keyframes svganimation {
+            0% {
+                stroke-dashoffset: 1400;
+                fill: none;
+                fill-opacity:0;
+                stroke-opacity: 1;
+            }
+            20% {
+                stroke-dashoffset: 0;
+            }
+            30% {
+                stroke-dashoffset: 0;
+            }
+            40% {
+                stroke-dashoffset: 0;
+                fill: #000000;
+            }
+            50% {
+                fill-opacity:1;
+            }
+            80% {
+                stroke-dashoffset: 0;
+                fill-opacity:0;
+            }
+            100% {
+                fill-opacity:0;
+                fill: none;
+                stroke-opacity: 0;
+            }
+        }
+/* ==================================================*/
+/* ==================================================*/
+/*                  Redes Sociais                    */
 
 .Icone-Redes a {
     width: 40px;
     height: 40px;
-    display: inline-block;
+    display: flex;
     text-indent: -99999px;
     text-decoration: none;
     
+}
+.Icone-Redes li{
+    display: inline-block
 }
 
 .github {
@@ -57,4 +88,37 @@ body {
 .facebook {
     background-image: url(Imagens/facebook.png);
     background-size: 40px;  
+}
+/* ==================================================*/
+/* ==================================================*/
+/*                  Foto e nome                      */
+
+.foto, .navegacao {
+    float: right;
+    box-sizing: border-box;
+}
+
+.foto{
+    position: absolute;
+    top: 0;
+    right: 565px;
+}
+
+.navegacao {
+    top: 180px;
+    right: 550px;
+    position: absolute;
+    
+}
+
+div h2 {
+    position: absolute;
+    top: 230px;
+    left: 480px;
+}
+
+div p {
+    position: absolute;
+    top: 330px;
+    
 }
