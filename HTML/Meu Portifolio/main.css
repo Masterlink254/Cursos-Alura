@@ -3,6 +3,14 @@ body {
     color: white;
 }
 
+.cor-preta {
+    background-color: #424242;
+}
+
+.navbar-preta {
+    background-color: #0d0d0d;
+}
+
 
 /* ==================================================*/
 /*                  Animação SVG                     */
@@ -64,7 +72,7 @@ body {
     display: flex;
     text-indent: -99999px;
     text-decoration: none;
-    
+    margin-right: 50px;
 }
 .Icone-Redes li{
     display: inline-block
@@ -98,27 +106,3 @@ body {
     box-sizing: border-box;
 }
 
-.foto{
-    position: absolute;
-    top: 0;
-    right: 565px;
-}
-
-.navegacao {
-    top: 180px;
-    right: 550px;
-    position: absolute;
-    
-}
-
-div h2 {
-    position: absolute;
-    top: 230px;
-    left: 480px;
-}
-
-div p {
-    position: absolute;
-    top: 330px;
-    
-}
