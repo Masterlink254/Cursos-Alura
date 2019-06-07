@@ -11,18 +11,50 @@ body {
     background-color: #0d0d0d;
 }
 
+.cor-preta p {
+    font-family: 'Rajdhani', sans-serif;
+}
+
+/* ==================================================*/
+/*                Div carregamento                   */
+
+.suadiv{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:11;
+	background-color:#000;
+	width:100%;
+	height:100%;
+    opacity: 0;
+    visibility: hidden;	
+	filter: alpha(opacity=65);
+    animation: divframe 5s;
+}
+
+@keyframes divframe {
+    0% {
+        opacity: 1;
+        visibility: visible;
+    }
+    90% {
+        opacity: 1;
+        visibility: visible;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
 
 /* ==================================================*/
 /*                  Animação SVG                     */
 
-        .animate-svg {
-            width: 800px;
-            margin: 200px auto;
-        }
+
 
         .animate-svg svg {
             stroke-width: 2px;
-            stroke: #000;
+            stroke: #fff;
             width: 100%;
             height: 100%;
             stroke-dashoffset: 0;
@@ -30,6 +62,7 @@ body {
             animation: svganimation 5s ease-in-out;
             fill: none;
             stroke-opacity: 0;
+            padding: 40px;
         }
 
         @keyframes svganimation {
@@ -47,7 +80,7 @@ body {
             }
             40% {
                 stroke-dashoffset: 0;
-                fill: #000000;
+                fill: #fff;
             }
             50% {
                 fill-opacity:1;
@@ -55,6 +88,7 @@ body {
             80% {
                 stroke-dashoffset: 0;
                 fill-opacity:0;
+                stroke-opacity: 0;
             }
             100% {
                 fill-opacity:0;
@@ -104,5 +138,9 @@ body {
 .foto, .navegacao {
     float: right;
     box-sizing: border-box;
+}
+
+.alien {
+    margin-left: 25%;
 }
 
