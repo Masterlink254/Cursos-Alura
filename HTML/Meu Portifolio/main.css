@@ -1,10 +1,9 @@
 body {
-    background-color: #424242;
+    background-image: url(Imagens/twitch.jpg);
     color: white;
-}
-
-.cor-preta {
-    background-color: #424242;
+    background-position: -150px;
+    background-repeat: no-repeat;
+    
 }
 
 .navbar-preta {
@@ -14,6 +13,73 @@ body {
 .cor-preta p {
     font-family: 'Rajdhani', sans-serif;
 }
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
+/*                Div principal                      */
+
+.principal {
+    background-color: #424242;
+    width: 65%;
+    height: 100%;
+    margin-bottom: -10px;
+}
+
+    /* ==================================================*/
+    /*                  Redes Sociais                    */
+
+    .Icone-Redes a {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        text-indent: -99999px;
+        text-decoration: none;
+        margin-right: 50px;
+    }
+    .Icone-Redes li{
+        display: inline-block
+    }
+
+    .github {
+        background-image: url(Imagens/github.png);
+
+    }
+
+    .artstation {
+        background-image: url(Imagens/artstation.png);
+        background-size: 40px; 
+    }
+
+    .instagram {
+        background-image: url(Imagens/instagram.png);
+        background-size: 40px; 
+    }
+
+    .facebook {
+        background-image: url(Imagens/facebook.png);
+        background-size: 40px;  
+    }
+    /* ==================================================*/
+    /* ==================================================*/
+    /*                  Foto e nome                      */
+
+    .foto, .navegacao {
+        float: right;
+        box-sizing: border-box;
+    }
+
+    .alien {
+        margin-right: 50% ;
+    }
+
+    .pirata {
+        margin-left: 50%;
+        
+    }
+
+
+    /* ==================================================*/
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
 /* ==================================================*/
 /*                Div carregamento                   */
@@ -25,7 +91,7 @@ body {
 	z-index:11;
 	background-color:#000;
 	width:100%;
-	height:100%;
+	height:100% auto;
     opacity: 0;
     visibility: hidden;	
 	filter: alpha(opacity=65);
@@ -63,6 +129,7 @@ body {
             fill: none;
             stroke-opacity: 0;
             padding: 40px;
+            margin-bottom: 15%;
         }
 
         @keyframes svganimation {
@@ -97,50 +164,4 @@ body {
             }
         }
 /* ==================================================*/
-/* ==================================================*/
-/*                  Redes Sociais                    */
-
-.Icone-Redes a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    text-indent: -99999px;
-    text-decoration: none;
-    margin-right: 50px;
-}
-.Icone-Redes li{
-    display: inline-block
-}
-
-.github {
-    background-image: url(Imagens/github.png);
-    
-}
-
-.artstation {
-    background-image: url(Imagens/artstation.png);
-    background-size: 40px; 
-}
-
-.instagram {
-    background-image: url(Imagens/instagram.png);
-    background-size: 40px; 
-}
-
-.facebook {
-    background-image: url(Imagens/facebook.png);
-    background-size: 40px;  
-}
-/* ==================================================*/
-/* ==================================================*/
-/*                  Foto e nome                      */
-
-.foto, .navegacao {
-    float: right;
-    box-sizing: border-box;
-}
-
-.alien {
-    margin-left: 25%;
-}
 
