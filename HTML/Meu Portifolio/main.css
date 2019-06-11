@@ -1,7 +1,6 @@
 body {
     background-image: url(Imagens/twitch.jpg);
-    color: white;
-    background-position: -150px;
+    background-position: left -150px top;
     background-repeat: no-repeat;
     
 }
@@ -10,8 +9,26 @@ body {
     background-color: #0d0d0d;
 }
 
-.cor-preta p {
+.principal p,h2 {
     font-family: 'Rajdhani', sans-serif;
+    color: #fafafa;
+    
+}
+
+.descricao {
+    font-family: 'Rajdhani', sans-serif;
+    color: #fafafa;
+}
+
+.about-tag {
+    display: inline-block;
+    vertical-align: top;
+    border: 1px solid #fafafa;
+    font-size: 1rem;
+    padding: 0.3125rem 1.0625rem;
+    margin: 0 0.5rem 0.625rem 0;
+    border-radius: 1.125rem;
+    color: #fafafa;
 }
 
 /*+++++++++++++++++++++++++++++++++++++++++++++++++++*/
@@ -23,6 +40,7 @@ body {
     height: 100%;
     margin-bottom: -10px;
 }
+
 
     /* ==================================================*/
     /*                  Redes Sociais                    */
@@ -68,11 +86,12 @@ body {
     }
 
     .alien {
-        margin-right: 50% ;
+        margin-right: 30% ;
     }
 
     .pirata {
-        margin-left: 50%;
+        margin-left: 30%;
+        margin-top: -300px;
         
     }
 
@@ -91,7 +110,7 @@ body {
 	z-index:11;
 	background-color:#000;
 	width:100%;
-	height:100% auto;
+	height:110% auto;
     opacity: 0;
     visibility: hidden;	
 	filter: alpha(opacity=65);
