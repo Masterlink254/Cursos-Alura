@@ -16,6 +16,9 @@ body {
     color: #fafafa;   
 }
 
+* {
+  margin: 0;
+}
 
 
 .descricao {
