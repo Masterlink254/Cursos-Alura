@@ -2,6 +2,8 @@ body {
     background-image: url(Imagens/twitch.jpg);
     background-position: left -150px top;
     background-repeat: no-repeat;
+    background-size: auto;
+    background-color: #000;
     
 }
 
@@ -11,9 +13,10 @@ body {
 
 .principal p,h2 {
     font-family: 'Rajdhani', sans-serif;
-    color: #fafafa;
-    
+    color: #fafafa;   
 }
+
+
 
 .descricao {
     font-family: 'Rajdhani', sans-serif;
@@ -39,6 +42,7 @@ body {
     width: 65%;
     height: 100%;
     margin-bottom: -10px;
+    box-sizing: content-box !important;
 }
 
 
@@ -54,12 +58,12 @@ body {
         margin-right: 50px;
     }
     .Icone-Redes li{
-        display: inline-block
+        display: inline-block;
+        box-sizing: content-box !important;
     }
 
     .github {
         background-image: url(Imagens/github.png);
-
     }
 
     .artstation {
@@ -115,6 +119,7 @@ body {
     visibility: hidden;	
 	filter: alpha(opacity=65);
     animation: divframe 5s;
+    box-sizing: border-box;
 }
 
 @keyframes divframe {
@@ -149,6 +154,7 @@ body {
             stroke-opacity: 0;
             padding: 40px;
             margin-bottom: 15%;
+            box-sizing: border-box;
         }
 
         @keyframes svganimation {
@@ -184,3 +190,23 @@ body {
         }
 /* ==================================================*/
 
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+      .col-1 {width: 8.33%;}
+      .col-2 {width: 16.66%;}
+      .col-3 {width: 50%;}
+      .col-4 {width: 33.33%;}
+      .col-5 {width: 41.66%;}
+      .col-6 {width: 50%;}
+      .col-7 {width: 58.33%;}
+      .col-8 {width: 66.66%;}
+      .col-9 {width: 75%;}
+      .col-10 {width: 83.33%;}
+      .col-11 {width: 91.66%;}
+      .col-12 {width: 100%;}
+}
+
+[class*="col-"] {
+    width: 100%;
+    
+}
