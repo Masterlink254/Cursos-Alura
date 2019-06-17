@@ -13,6 +13,8 @@ namespace CaelumEstoque.Controllers
         [Route("produtos", Name = "ListaProdutos")]
         public ActionResult Index()
         {
+            
+
             ProdutosDAO dao = new ProdutosDAO();
             IList<Produto> produtos = dao.Lista();
             return View(produtos);
@@ -26,7 +28,7 @@ namespace CaelumEstoque.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpPost, ValidateAntiForgeryToken]
         public ActionResult Adiciona(Produto produto)
         {
             int idDaInformatica = 1;
