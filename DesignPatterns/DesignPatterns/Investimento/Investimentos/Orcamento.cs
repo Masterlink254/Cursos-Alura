@@ -12,7 +12,7 @@ namespace InvestimentoSolution.Investimentos
 
         public Orcamento(double valor)
         {
-            this.Valor = valor;
+            this.Valor = valor * 0.75;
         }
     }
 }

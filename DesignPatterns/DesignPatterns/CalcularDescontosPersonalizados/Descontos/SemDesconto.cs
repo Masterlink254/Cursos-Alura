@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CalcularDescontosPersonalizados.Descontos
+{
+    public class SemDesconto
+    {
+        public Desconto Proximo { get; set; }
+
+        public Double Desconta(Orcamento orcamento)
+        {
+            return 0;
+        }
+    }
+}
