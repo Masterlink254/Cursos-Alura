@@ -6,8 +6,28 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns
 {
-    interface Imposto
+    public abstract class Imposto
     {
-        double Calcula(Orcamento orcamento);
+        private readonly Imposto outroImposto;
+
+        public Imposto(Imposto outroImposto)
+        {
+            this.OutroImposto = outroImposto;
+        }
+
+        // construtor default
+        public Imposto()
+        {
+            this.OutroImposto = null;
+        }
+
+        protected double CalculoDoOutroImposto(Orcamento orcamento)
+        {
+            // tratando o caso do proximo imposto nao existir!
+            if (OutroImposto == null) return 0;
+            return OutroImposto.Calcula(orcamento));
+        }
+
+        public abstract double Calcula(Orcamento orcamento);
     }
 }

@@ -46,10 +46,18 @@
     <Compile Include="Impostos\CalculadorDeImposto.cs" />
     <Compile Include="Impostos\ICCC.cs" />
     <Compile Include="Impostos\ICMS.cs" />
+    <Compile Include="Impostos\ICPP.cs" />
+    <Compile Include="Impostos\IHIT.cs" />
+    <Compile Include="Impostos\IKCV.cs" />
     <Compile Include="Impostos\Imposto.cs" />
     <Compile Include="Impostos\ISS.cs" />
+    <Compile Include="Impostos\Item.cs" />
     <Compile Include="Impostos\Orcamento.cs" />
     <Compile Include="Impostos\Program.cs" />
+    <Compile Include="Impostos\Relatorio.cs" />
+    <Compile Include="Impostos\RelatorioComplexo.cs" />
+    <Compile Include="Impostos\RelatorioSimples.cs" />
+    <Compile Include="Impostos\TemplateDeImpostoCondicional.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

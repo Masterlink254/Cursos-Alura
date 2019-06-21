@@ -6,24 +6,28 @@ using System.Threading.Tasks;
 
 namespace CursoDesignPatterns.Impostos
 {
-    class IKCV
+    class IKCV : TemplateDeImpostoCondicional
     {
-        public override bool DeveUsarMaximaTaxacao(Orcamento orcamento)
+        protected override bool DeveUsarMaximaTaxacao(Orcamento orcamento)
         {
-            return orcamento.Valor > 500 && TemItemMaiorQue100ReaisNo(orcamento);
+            return orcamento.Valor > 500 && temItemMaiorQue100ReaisNo(orcamento);
         }
-        public override double MaximaTaxacao(Orcamento orcamento)
+        protected override double MaximaTaxacao(Orcamento orcamento)
         {
             return orcamento.Valor * 0.10;
         }
-        public override double MinimaTaxacao(Orcamento orcamento)
+        protected override double MinimaTaxacao(Orcamento orcamento)
         {
             return orcamento.Valor * 0.06;
         }
 
         private bool TemItemMaiorQue100ReaisNo(Orcamento orcamento)
         {
-            // retorna verdadeiro caso algum item seja maior que 100 reais
+            foreach (Item item in itens)
+            {
+                if (item.Valor > 100) return true;
+            }
+            return false;
         }
     }
 }
