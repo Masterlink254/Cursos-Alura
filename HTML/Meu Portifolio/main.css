@@ -131,6 +131,21 @@ body {
     }
 }
 
+.suadiv2{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	background-color:#000;
+	width:100%;
+	height:110%;
+    opacity: 0;
+    visibility: hidden;	
+	filter: alpha(opacity=65);
+    animation: divframe 5200ms;
+    box-sizing: border-box;
+}
+
 /* ==================================================*/
 /*                  Animação SVG                     */
 
