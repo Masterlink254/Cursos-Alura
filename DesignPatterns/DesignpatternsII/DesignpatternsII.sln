@@ -13,6 +13,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioCalculadora", "Exe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioMensagens", "ExercicioMensagens\ExercicioMensagens.csproj", "{ACF47D91-2EC9-46B9-BC74-B5A5D1558A36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioPedidos", "ExercicioPedidos\ExercicioPedidos.csproj", "{F4B70C2C-2E38-46D8-A9C1-EDB74656AF31}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExercicioXML", "ExercicioCliente\ExercicioXML.csproj", "{DC0DA55B-B2DF-4E6D-BA90-301674F153CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +43,14 @@ Global
 		{ACF47D91-2EC9-46B9-BC74-B5A5D1558A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ACF47D91-2EC9-46B9-BC74-B5A5D1558A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ACF47D91-2EC9-46B9-BC74-B5A5D1558A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4B70C2C-2E38-46D8-A9C1-EDB74656AF31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4B70C2C-2E38-46D8-A9C1-EDB74656AF31}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4B70C2C-2E38-46D8-A9C1-EDB74656AF31}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4B70C2C-2E38-46D8-A9C1-EDB74656AF31}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC0DA55B-B2DF-4E6D-BA90-301674F153CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC0DA55B-B2DF-4E6D-BA90-301674F153CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC0DA55B-B2DF-4E6D-BA90-301674F153CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC0DA55B-B2DF-4E6D-BA90-301674F153CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
