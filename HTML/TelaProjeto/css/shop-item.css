@@ -6,3 +6,12 @@
 body {
   padding-top: 56px;
 }
+
+.imagem-grande {
+    max-width: 150%;
+   
+}
+.borda {
+    border: 1px solid gray;
+    margin-left: 10px; 
+}
