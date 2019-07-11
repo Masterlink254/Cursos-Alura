@@ -1,0 +1,51 @@
+.artstation-grande {
+    background-image: url(../Imagens/artstation-grande.jpg);
+    background-size: 150px; 
+    border-radius: 30px;
+}
+
+.instagram-grande {
+    background-image: url(../Imagens/instagram-icone-grande.png);
+    background-size: 150px;
+}
+
+.github-grande {
+    background-image: url(../Imagens/github-grande.png);
+    background-size: 205px;
+    background-position: center -29px;
+    border-radius: 100px;
+}
+
+.facebook-grande {
+    background-image: url(../Imagens/facebook-grande.jpg);
+    background-size: 150px;
+    border-radius: 30px;
+}
+
+.steam-grande {
+    background-image: url(../Imagens/steam-grande.png);
+    background-size: 170px;
+    border-radius: 100px;
+    background-position: center;
+}
+
+.mixer-grande {
+    background-image: url(../Imagens/mixer-grande.png);
+    background-size: 170px;
+    border-radius: 100px;
+    background-position: center;
+}
+
+.icone-redes-grande a {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        text-indent: -99999px;
+        text-decoration: none;
+        margin-right: 50px;
+}
+
+.icone-redes-grande li {
+        display: inline-block;
+        box-sizing: content-box !important;
+}

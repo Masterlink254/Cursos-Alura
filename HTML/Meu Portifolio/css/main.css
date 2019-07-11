@@ -66,21 +66,21 @@ body {
     }
 
     .github {
-        background-image: url(Imagens/github.png);
+        background-image: url(../Imagens/github.png);
     }
 
     .artstation {
-        background-image: url(Imagens/artstation.png);
+        background-image: url(../Imagens/artstation.png);
         background-size: 40px; 
     }
 
     .instagram {
-        background-image: url(Imagens/instagram.png);
+        background-image: url(../Imagens/instagram.png);
         background-size: 40px; 
     }
 
     .facebook {
-        background-image: url(Imagens/facebook.png);
+        background-image: url(../Imagens/facebook.png);
         background-size: 40px;  
     }
     /* ==================================================*/
@@ -90,6 +90,9 @@ body {
     .foto, .navegacao {
         float: right;
         box-sizing: border-box;
+    }
+    .eu {
+        width: 250px;
     }
 
 
