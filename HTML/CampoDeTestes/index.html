@@ -11,14 +11,7 @@
       
    
 
- 
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" >
 
-  <link href="//cloud.typenetwork.com/projects/2160/fontface.css/" rel="stylesheet" type="text/css">
-
-  <link href="/anime-master/documentation/assets/css/animejs.css" rel="stylesheet">
-  <link href="/anime-master/documentation/assets/css/anime-theme.css" rel="stylesheet">
-  <link href="/anime-master/documentation/assets/css/documentation.css" rel="stylesheet">
 
   <script src="../lib/anime.min.js"></script>
         
@@ -26,173 +19,21 @@
     
     </head>
     <body>
-        
-      
-
-   <article id="svg" class="color-svg">
-<header>
-  <h2 class="demos-title">SVG</h2>
-</header>
-
-<div id="motionPath" class="demo">
-  <h3 class="demo-title">Motion path</h3>
-  <div class="demo-description">
-    <p>
-      Animates an element relative to the <code>x</code>, <code>y</code> and <code>angle</code> values of an SVG path element.
-    </p>
-    <pre><code>var myPath = anime.path('svg path');</code></pre>
-    <p>
-      The path function returns a new Function that returns the specified property.
-    </p>
-    <p class="bubble info">
-      Motion path animations are responsive since v3
-    </p>
-    <table>
-      <thead>
-        <td>Parameters</td>
-        <td>Example</td>
-        <td>Info</td>
-      </thead>
-      <tr>
-        <td><code>'x'</code></td>
-        <td><code>myPath('x')</code></td>
-        <td>Return the current x value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'y'</code></td>
-        <td><code>myPath('y')</code></td>
-        <td>Return the current y value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'angle'</code></td>
-        <td><code>myPath('angle')</code></td>
-        <td>Return the current angle value in <code>'degres'</code> of the SVG path</td>
-      </tr>
-    </table>
-  </div>
-  <div class="demo-content motion-path-demo">
-    <div class="motion-path">
-      <div class="small square shadow follow-path"></div>
-      <div class="small square el follow-path"></div>
-      <svg width="256" height="112" viewBox="0 0 256 112">
-        <path fill="none" stroke="currentColor" stroke-width="1" d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"/>
-      </svg>
-    </div>
-  </div>
-  <script>var motionPath = function() {
-/*DEMO*/
-var path = anime.path('.motion-path-demo path');
-
-anime({
-  targets: '.motion-path-demo .el',
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  easing: 'linear',
-  duration: 2000,
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-<div id="morphing" class="demo">
-  <h3 class="demo-title">Morphing</h3>
-  <div class="demo-description">
-    <p>
-      Creates transition between two svg shapes.
-    </p>
-    <p class="bubble warning">
-      Shapes must have the same number of points!
-    </p><br>
-    <p class="bubble info">
-      More info on SVG shape morphing <a href="https://hackernoon.com/metamorphosis-morphing-svgs-378cf4f3aa58">here</a>.
-    </p>
-  </div>
-  <div class="demo-content align-center morphing-demo">
-    <svg width="140" height="140" viewBox="0 0 140 140">
-      <g fill="none" fill-rule="evenodd">
-        <g fill="currentColor" fill-opacity=".15" transform="translate(0 6)">
-          <polygon points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"/>
-          <polygon points="70 18 119.455 53.931 100.565 112.069 39.435 112.069 20.545 53.931"/>
-          <polygon points="70 34.86 101.727 57.911 89.609 95.209 50.391 95.209 38.273 57.911"/>
-          <polygon points="70 50.898 84.864 61.697 79.186 79.171 60.814 79.171 55.136 61.697"/>
-        </g>
-        <polygon class="polymorph" stroke-width="1" stroke="currentColor" points="70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369"/>
-      </g>
-    </svg>
-  </div>
-  <script>var morphing = function() {
-/*DEMO*/
-anime({
-  targets: '.morphing-demo .polymorph',
-  points: [
-    { value: [
-      '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
-      '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
-    },
-    { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
-    { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
-    { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
-  ],
-  easing: 'easeOutQuad',
-  duration: 2000,
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-<div id="lineDrawing" class="demo">
-  <h3 class="demo-title">Line drawing</h3>
-  <div class="demo-description">
-    <p>
-      Creates path drawing animation using the <code>'stroke-dashoffset'</code> property.<br>
-      Set the path <code>'dash-offset'</code> value with <code>anime.setDashoffset()</code> in a <a href="#fromToValues" class="color-values">from to</a> formated value.
-    </p>
-    <pre><code>strokeDashoffset: [anime.setDashoffset, 0]</code></pre>
-    <p class="bubble info">
-      More info on line drawing animation <a href="https://css-tricks.com/svg-line-animation-works/">here</a>.
-    </p>
-  </div>
-  <div class="demo-content align-center line-drawing-demo">
-    <svg viewBox="0 0 280 100">
-      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
-        <path class="el" d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z"/>
-        <path class="el" d="M73 80V20H58v60h15z"/>
-        <path class="el" d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z"/>
-        <path class="el" d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z"/>
-        <path class="el" d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z"/>
-        <path class="el" d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z"/>
-        <path class="el" d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z"/>
-      </g>
-    </svg>
-  </div>
-  <script>var lineDrawing = function() {
-/*DEMO*/
-anime({
-  targets: '.line-drawing-demo .lines path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 1500,
-  delay: function(el, i) { return i * 250 },
-  direction: 'alternate',
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-</article>
-        <script src="anime-master/documentation/assets/js/vendors/highlight.pack.js"></script>
-  <script src="anime-master/documentation/assets/js/vendors/beautify-html.js"></script>
-  <script src="anime-master/documentation/assets/js/documentation.js"></script>
-        
+    
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
+            <path class="flor-gradientea" id="svg_6" d="m313.5,49.4375" fill="url(#skyGradient)"/>
+            <path class="flor-gradientea" id="svg_7" d="m288.5,68.3125c15,0 117.37499,164.37499 44.25,213.24999l-41.25,0.87501l-46.75,0.49999c-84.625,-49.75 34.375,-212.74999 43.75,-214.62499z" fill="url(#skyGradient)"/>
+        </svg>
+  <defs>
+         <linearGradient id="skyGradient" x1="100%" y1="100%">
+          <stop offset="0%" stop-color="lightblue" stop-opacity=".5">
+            <animate attributeName="stop-color" values="lightblue;blue;red;red;black;red;red;purple;lightblue" dur="14s" repeatCount="indefinite" />
+          </stop>
+          <stop offset="100%" stop-color="lightblue" stop-opacity=".5">
+            <animate attributeName="stop-color" values="lightblue;orange;purple;purple;black;purple;purple;blue;lightblue" dur="14s" repeatCount="indefinite" />
+            <animate attributeName="offset" values=".95;.80;.60;.40;.20;0;.20;.40;.60;.80;.95" dur="14s" repeatCount="indefinite" />
+          </stop>
+        </linearGradient>
+        </defs>
     </body>
 </html>
